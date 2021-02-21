@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	img: {
 		width: '100%',
-		height: '100%',
+		height: 350,
 		objectFit: 'cover'
 	}
 }));
@@ -26,14 +26,19 @@ export default function Banner() {
 
 	return (
 		<div className={classes.root}>
-			<Card elevation={4} className={classes.mainCard}>
-				<Grid container spacing={4}>
+			<Card elevation={0} className={classes.mainCard}>
+				<Grid container spacing={2}>
 					<Grid item xs={12} sm={8}>
-						<AliceCarousel autoPlay autoPlayInterval="3000">
+						<AliceCarousel
+							disableButtonsControls={true}
+							infinite={true}
+							autoPlay={true}
+							autoPlayInterval="2000"
+						>
 							<img src="/galaxy.jpg" className={classes.img} alt="" />
 							<img src="/scenery.jpg" className={classes.img} alt="" />
 							<img src="/scenery1.jpg" className={classes.img} alt="" />
-							<img src="/scenery1.jpg" className={classes.img} alt="" />
+							<img src="/scenery.jpg" className={classes.img} alt="" />
 						</AliceCarousel>
 					</Grid>
 					<Grid item xs={12} sm={4}>

@@ -43,7 +43,7 @@ export default function InquiryForm() {
 						/>
 					</Grid>
 					<Grid item xs={12} sm={12} style={{ display: 'flex', justifyContent: 'center' }}>
-						<TextField id="email" variant="outlined" required fullWidth label="email" size="small" />
+						<TextField id="email" variant="outlined" required fullWidth label="Email" size="small" />
 					</Grid>
 					<Grid item xs={12} sm={12} style={{ display: 'flex', justifyContent: 'center' }}>
 						<TextField
@@ -57,7 +57,13 @@ export default function InquiryForm() {
 						/>
 					</Grid>
 					<Grid item xs={12} sm={12} style={{ display: 'flex', justifyContent: 'center' }}>
-						<Button variant="contained" size="medium" color="primary" className={classes.buttonStyle}>
+						<Button
+							variant="contained"
+							size="medium"
+							color="primary"
+							className={classes.buttonStyle}
+							fullWidth
+						>
 							SUBMIT
 						</Button>
 					</Grid>
