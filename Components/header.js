@@ -242,8 +242,8 @@ const useStyles = makeStyles((theme) => ({
 			width: '40ch'
 		},
 		[theme.breakpoints.down('md')]: {
-			marginLeft: theme.spacing(3),
-			width: '25ch',
+			marginLeft: theme.spacing(0),
+			width: 'auto',
 			borderRadius: 50
 		}
 	},
@@ -266,7 +266,7 @@ const useStyles = makeStyles((theme) => ({
 		transition: theme.transitions.create('width'),
 		width: '100%',
 		[theme.breakpoints.up('md')]: {
-			width: '30ch'
+			width: '20ch'
 		}
 	},
 	heading: {
