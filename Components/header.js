@@ -237,8 +237,14 @@ const useStyles = makeStyles((theme) => ({
 		marginLeft: 0,
 		width: '100%',
 		[theme.breakpoints.up('sm')]: {
-			marginLeft: theme.spacing(3),
-			width: '30ch'
+			marginLeft: theme.spacing(7),
+			borderRadius: 50,
+			width: '40ch'
+		},
+		[theme.breakpoints.down('md')]: {
+			// marginLeft: theme.spacing(3),
+			width: '25ch',
+			borderRadius: 50
 		}
 	},
 	searchIcon: {
@@ -260,7 +266,7 @@ const useStyles = makeStyles((theme) => ({
 		transition: theme.transitions.create('width'),
 		width: '100%',
 		[theme.breakpoints.up('md')]: {
-			width: '20ch'
+			width: '30ch'
 		}
 	},
 	heading: {
@@ -355,7 +361,7 @@ export default function Header() {
 				<Toolbar variant="dense">
 					<Link href="/">
 						<IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-							<img src="/logo.png" width="70" height="50" style={{ marginTop: 5, marginBottom: 5 }} />
+							<img src="/hero.svg" width="70" height="50" style={{ marginTop: 5, marginBottom: 5 }} />
 						</IconButton>
 					</Link>
 					<div variant="h6" className={classes.title}>
