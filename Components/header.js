@@ -359,7 +359,7 @@ export default function Header() {
 
 			<AppBar position="absolute">
 				<Toolbar variant="dense">
-					<Link href="/">
+					<Link href="/index">
 						<IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
 							<img src="/hero.svg" width="70" height="50" style={{ marginTop: 5, marginBottom: 5 }} />
 						</IconButton>
