@@ -242,7 +242,7 @@ const useStyles = makeStyles((theme) => ({
 			width: '40ch'
 		},
 		[theme.breakpoints.down('md')]: {
-			// marginLeft: theme.spacing(3),
+			marginLeft: theme.spacing(3),
 			width: '25ch',
 			borderRadius: 50
 		}
